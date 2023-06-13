@@ -24,30 +24,37 @@
     </div>
     <div class="bmicaptureDetails ">
       <div class="heading headingM bmigridline1">Enter your details below</div>
-      <div class="bodyM bodyMBold">
-        <input type="radio" name="measurement-system" id="metric" value="metric" />
+      <div class="bmiradiobox bodyM bodyMBold">
+        <input class="bmiradio" type="radio" name="measurement-system" id="metric" value="metric" />
         <label for="metric">Metric</label-for>
       </div>
-      <div class="bodyM bodyMBold">
-        <input type="radio" name="measurement-system" id="imperial" value="imperial" />
+      <div class="bmiradiobox bodyM bodyMBold">
+        <input class="bmiradio" type="radio" name="measurement-system" id="imperial" value="imperial" />
         <label for="imperial">Imperial</label-for>
       </div>
-      <div>
-        <label class="bodyS">Height<br /></label>
-        <p class="bmiinputsborder headingM">
-          <input class="bmiinputs headingM" type="number" id="height" />
-          <span class="headingM units">cm</span>
-        </p>
+      <div class="bmilabelbox">
+        <div>
+          <span class="bodyS">Height</label>
+        </div>
+        <div>
+          <span class="bmiinputsborder headingM">
+            <input class="bmiinputs headingM" type="number" id="height" />
+            <span class="headingM units">cm</span>
+        </div>
       </div>
-      <div>
-        <label class="bodyS">Weight<br /></label>
-        <p class="headingM bmiinputsborder">
-          <input class="bmiinputs headingM" type="number" id="weight" />
-          <span class="headingM units">kgs</span>
-        </p>
+      <div class="bmilabelbox">
+        <div>
+          <span class="bodyS">Weight</span>
+        </div>
+        <div>
+          <span class="headingM bmiinputsborder">
+            <input class="bmiinputs headingM" type="number" id="weight" />
+            <span class="headingM units">kgs</span>
+        </div>    
       </div>
       <div class="bottombanner">
-        <span >this is text</span>
+        <span class="headingM" style="color: white;">Welcome!</span>
+        <span class="bodyM" style="color: white;">Enter your height and weight and you'll see your BMI result here.</span>
       </div>
     </div>
 
