@@ -184,3 +184,31 @@
     width: 465px;
     height: 309px;
 }
+
+.tipsshadebox
+{
+    margin-top: 2rem;
+    width: 1550px;
+    height: 402px;
+    background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.tipbox
+{
+    margin-left: 5em;
+    width: 365px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items:center;
+}
+
+.tipimage
+{
+    width: 64px;
+    height: 64px;  
+}
