@@ -212,3 +212,59 @@
     width: 64px;
     height: 64px;  
 }
+
+.limitsofbmibox
+{
+    display: flex;
+    flex-direction: column;
+    width:1200px ;
+    row-gap: 2rem;
+    margin-left: 5rem;
+}
+
+.limitsofbmiboxline1
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.limitsofbmiboxline2
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.limitsofbmiboxline3
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.iconbmi
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height:2rem;
+    column-gap: 0.5rem;
+    width: 250px;
+}
+
+.bmismallcard
+{
+    display:flex;
+    color:#5E6E85;
+    flex-direction: column;
+    box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
+    width: 250px;
+}
