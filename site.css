@@ -92,23 +92,23 @@
 .bmicaptureDetails {
     position: absolute;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 10% 40% 30%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1em 3em auto auto auto;
     margin-top: 20%;
     margin-left: 80%;
     width: 564px;
-    height: 420px;
+    height: auto;
     background: #FFFFFF;
     box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
     border-radius: 16px;
     padding: 1rem;
-    column-gap: 1em;
+    row-gap: 1rem;
 }
 
 .bmigridline1 {
-    grid-column: 1/ 3;
+    grid-column: 1/ 5;
     text-align: start;
-
+    margin-bottom: 1em;
 }
 
 .bmilabelbox {
@@ -116,13 +116,14 @@
     flex-direction: column;
     justify-content: center;
     row-gap: 0.5em;
+    margin-left: 10px;
 }
 
 .bmiinputsborder {
     border: 1px solid #D8E2E7;
     border-radius: 12px;
     height: 2em;
-    width: 80%;
+    width:70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -142,6 +143,7 @@
 .bmiradiobox {
     display: flex;
     align-items: center;
+    justify-items: start;
     column-gap: 0.5em;
 }
 
@@ -151,6 +153,19 @@
     outline: none;
 }
 
+.bmiMetricUnitsBox
+{
+   display: flex;
+    grid-column:1/5
+}
+
+.bmiImperialUnitsBox
+{
+    display: flex;
+    width: 100%;
+    grid-column: 1/ 5
+}
+
 .bottombanner {
     display: flex;
     flex-direction: column;
@@ -158,11 +173,12 @@
     row-gap: 1em;
     background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
     border-radius: 16px 99px 99px 16px;
-    grid-column: 1/ 3;
+    grid-column: 1/ 5;
     text-align: start;
-    height: 10em;
-    width: 90%;
+    height: 8em;
+    width: 80%;
     padding-left: 2em;
+    margin-top: 1em;
 }
 
 .maneatingimg
@@ -245,6 +261,15 @@
     column-gap: 2rem;
 }
 
+.imgcurvebetween
+{
+    position: absolute;
+    width: 85px;
+    height:200px;
+    left: 1450px;
+    top: 700px;
+}
+
 .iconbmi
 {
     display: flex;
@@ -267,4 +292,5 @@
     background-color: white;
     padding: 1rem;
     width: 250px;
+    margin-left: 10px;
 }
