@@ -54,6 +54,7 @@
 
 .units {
     color: #345ff6;
+    margin-right: 5px;
 }
 
 .mainlayout {
@@ -94,7 +95,7 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1em 3em auto auto auto;
-    margin-top: 20%;
+    margin-top: 18%;
     margin-left: 80%;
     width: 564px;
     height: auto;
@@ -153,6 +154,7 @@
     width: 75%;
     border: none;
     outline: none;
+    padding-left: 0.5em;
 }
 
 .bmiMetricUnitsBox
@@ -171,19 +173,32 @@
     row-gap: 1rem;
 }
 
-.bottombanner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 1em;
+.bottombanner
+ {
+
     background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);
     border-radius: 16px 99px 99px 16px;
     grid-column: 1/ 5;
-    text-align: start;
     height: 8em;
     width: 80%;
+}
+
+.bmibannertext
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    row-gap: 1em;
     padding-left: 2em;
-    margin-top: 1em;
+    margin-top: 1rem;
+}
+
+.bmibannerresulttext
+{
+    margin-top: 1rem;
+    display: flex;
+    text-align: center;
 }
 
 .maneatingimg
