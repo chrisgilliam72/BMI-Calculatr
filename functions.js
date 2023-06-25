@@ -23,6 +23,16 @@ function isMetric() {
       case bmi>=30 : return " in the obese range"
      }
   }
+
+  function getBMIRangeText(bmi){
+    switch (true){
+      case bmi<18.5: return "A BMI under 18.5 is considered 'under weight'";
+      case bmi>18.5 && bmi <25 : return "A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'";
+      case bmi>=25 && bmi <30 : return "A BMI range of 25 to 30 is considered 'over weight.'";
+      case bmi>=30 : return "A BMI range of over 30 is considered 'obese.'"
+     }
+  }
+
   function calculateBMIMetric(){
     var height=Number($("#heightMetric").val())/100;
     var weight=Number($("#weightMetric").val());
@@ -76,20 +86,26 @@ function isMetric() {
     return false;
   }
 
-  function updateBMI()
+  function getBMI()
   {
-      if (isMetric())
-        $("#actualbmivalue").text(calculateBMIMetric());
-      else
-      $("#actualbmivalue").text(calculateBMIImperial());
-  }
-  
-  function upddateBMICategory(){
     let bmi=0.0;
     if (isMetric())
       bmi=calculateBMIMetric();
     else
       bmi=calculateBMIImperial();
+      return bmi;
+  }
+
+  function updateBMI()
+  {
+      if (isMetric())
+        $("#actualbmivalue").text(calculateBMIMetric());
+      else
+        $("#actualbmivalue").text(calculateBMIImperial());
+  }
+  
+  function upddateBMICategory(){
+    let bmi= getBMI();
     $("#bmicategory").text(calculateBMICategory(bmi))
   }
 
@@ -126,4 +142,10 @@ function isMetric() {
       $('#idealweight').text(weightRangeString)
     }
     
+  }
+
+  function updateBMIRangemeans()
+  { 
+    let bmi= getBMI();
+    $("#bmirangemens").text(getBMIRangeText(bmi));
   }
