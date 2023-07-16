@@ -13,89 +13,98 @@
 <body>
   <section>
     <div class="bluegradientsquare">
-      <img src="./assets/images/logo.svg" class="logo" alt="circle logo imgage" />
-      <div class="bmicalcsquare">
-        <div class="bmicalcheading heading headingXL">Body Mass <br /> Index Calculator</div>
-        <br />
-        <div class="bmicalctext body bodyM">Better understand your weight in relation to your height using our
-          body mass index (BM) calculator. While BMI is not the sole determinant
-          of a healthy weight, it offers a valuable starting point to evaluate
-          your overall health and well-being.</div>
+      <div>
+        <img src="./assets/images/logo.svg" class="logo" alt="circle logo imgage" />
       </div>
-      <div class="bmicaptureDetails">
-        <span class="heading headingM bmigridline1">Enter your details below</span>
-        <div class="bmiradiobox bodyM bodyMBold" style="grid-column: 1/ 3;">
-          <input class="bmiradio" type="radio" name="measurement-system" id="metricRadio" value="metric"
-            checked="checked" />
-          <label for="metricRadio">Metric</label-for>
-        </div>
-        <div class="bmiradiobox bodyM bodyMBold" style="grid-column: 3/ 5" ;>
-          <input class="bmiradio" type="radio" name="measurement-system" id="imperialRadio" value="imperial" />
-          <label for="imperialRadio">Imperial</label-for>
-        </div>
-        <div id="metricUnitsbox" class="bmiMetricUnitsBox">
-          <div class="bmilabelbox">
-            <span class="body bodyS">Height</span>
-            <span class="bmiinputsborder headingM">
-              <input class="bmiinputs headingM" type="number" id="heightMetric" />
-              <span class="units headingM" id="heightUnits">cm</span>
-            </span>
-          </div>
-          <div class="bmilabelbox">
-            <span class="body bodyS">Weight</span>
-            <span class="headingM bmiinputsborder">
-              <input class="bmiinputs headingM" type="number" id="weightMetric" />
-              <span class="headingM units" id="weightUnits">kgs</span>
-            </span>
-          </div>
-        </div>
-        <div id="imperialUnitsBox" class="bmiImperialUnitsBox">
-          <div class="bmilabelbox" style="grid-column: 1/3;">
-            <span class="body bodyS">Height</span>
-          </div>
-          <div class="bmiinputsborder headingM" style="width: 100%;">
-            <input class="bmiinputs headingM" type="number" id="heightImperianFt" />
-            <span class="units headingM" id="heightUnits">ft</span>
-          </div>
-          <div class="bmiinputsborder headingM" style="width: 100%;">
-            <input class="bmiinputs headingM" type="number" id="heightImperialIn" />
-            <span class="units headingM" id="heightUnits">in</span>
-          </div>
-          <div class="bmilabelbox" style="grid-column: 1/3;">
-            <span class="body bodyS">Weight</span>
-          </div>
-          <span class="headingM bmiinputsborder" style="width: 100%;">
-            <input class="bmiinputs headingM" type="number" id="weightImperialSt" />
-            <span class="headingM units" id="weightUnits">st</span>
-          </span>
-          <span class="bmiinputsborder headingM" style="width: 100%;">
-            <input class="bmiinputs headingM" type="number" id="weightImperialLb" />
-            <span class="units headingM" id="heightUnits">lbs</span>
-          </span>
-        </div>
-        <div class="bottombanner">
-          <div class="bmibannertext" id="bmibannertext">
-            <span class="headingM" style="color: white;">Welcome!</span>
-            <span class="bodyM" style="color: white;">Enter your height and weight and you'll see your BMI result
-              here.</span>           
-          </div>
-          <div class="bmibannerresulttext" id="bmiactualresult">
-              <div style="width: 50%;">
-                <span class="headingM" style="color: white;">Your BMI Is ...!</span>
-                <span class="headingXL" style="color: white;" id="actualbmivalue"></span>
-              </div>
-              <div  style="width: 50%;padding-right: 1em;">
-                <span class="body bodyS" style="color: white;">
-                  Your BMI suggests you're<label id="bmicategory"></label>.Your ideal weight is between
-                </span>
-                <span class="body bodyS" style="color: white; font-weight:bold;" id="idealweight"> </span>
-              </div>
+      <div>
+        <div class="textarea1">
+          <div class="heading headingXL">Body Mass Index Calculator</div>
+          <br/>
+          <div class="body bodyM">Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole determinant
+            of a healthy weight, it offers a valuable starting point to evaluate
+            your overall health and well-being.
           </div>
         </div>
       </div>
+
+     
+  
+
+        <!-- <div class="bmicaptureDetails">
+          <span class="heading headingM bmigrridline1">Enter your details below</span>
+          <div class="bmiradiobox bodyM bodyMBold" style="grid-column: 1/ 3;">
+            <input class="bmiradio" type="radio" name="measurement-system" id="metricRadio" value="metric"
+              checked="checked" />
+            <label for="metricRadio">Metric</label-for>
+          </div>
+          <div class="bmiradiobox bodyM bodyMBold" style="grid-column: 3/ 5" ;>
+            <input class="bmiradio" type="radio" name="measurement-system" id="imperialRadio" value="imperial" />
+            <label for="imperialRadio">Imperial</label-for>
+          </div>
+          <div id="metricUnitsbox" class="bmiMetricUnitsBox">
+            <div class="bmilabelbox">
+              <span class="body bodyS">Height</span>
+              <span class="bmiinputsborder headingM">
+                <input class="bmiinputs headingM" type="number" id="heightMetric" />
+                <span class="units headingM" id="heightUnits">cm</span>
+              </span>
+            </div>
+            <div class="bmilabelbox">
+              <span class="body bodyS">Weight</span>
+              <span class="headingM bmiinputsborder">
+                <input class="bmiinputs headingM" type="number" id="weightMetric" />
+                <span class="headingM units" id="weightUnits">kgs</span>
+              </span>
+            </div>
+          </div>
+          <div id="imperialUnitsBox" class="bmiImperialUnitsBox">
+            <div class="bmilabelbox" style="grid-column: 1/3;">
+              <span class="body bodyS">Height</span>
+            </div>
+            <div class="bmiinputsborder headingM" style="width: 100%;">
+              <input class="bmiinputs headingM" type="number" id="heightImperianFt" />
+              <span class="units headingM" id="heightUnits">ft</span>
+            </div>
+            <div class="bmiinputsborder headingM" style="width: 100%;">
+              <input class="bmiinputs headingM" type="number" id="heightImperialIn" />
+              <span class="units headingM" id="heightUnits">in</span>
+            </div>
+            <div class="bmilabelbox" style="grid-column: 1/3;">
+              <span class="body bodyS">Weight</span>
+            </div>
+            <span class="headingM bmiinputsborder" style="width: 100%;">
+              <input class="bmiinputs headingM" type="number" id="weightImperialSt" />
+              <span class="headingM units" id="weightUnits">st</span>
+            </span>
+            <span class="bmiinputsborder headingM" style="width: 100%;">
+              <input class="bmiinputs headingM" type="number" id="weightImperialLb" />
+              <span class="units headingM" id="heightUnits">lbs</span>
+            </span>
+          </div>
+          <div class="bottombanner">
+            <div class="bmibannertext" id="bmibannertext">
+              <span class="headingM" style="color: white;">Welcome!</span>
+              <span class="bodyM" style="color: white;">Enter your height and weight and you'll see your BMI result
+                here.</span>           
+            </div>
+            <div class="bmibannerresulttext" id="bmiactualresult">
+                <div style="width: 50%;">
+                  <span class="headingM" style="color: white;">Your BMI Is ...!</span>
+                  <span class="headingXL" style="color: white;" id="actualbmivalue"></span>
+                </div>
+                <div  style="width: 50%;padding-right: 1em;">
+                  <span class="body bodyS" style="color: white;">
+                    Your BMI suggests you're<label id="bmicategory"></label>.Your ideal weight is between
+                  </span>
+                  <span class="body bodyS" style="color: white; font-weight:bold;" id="idealweight"> </span>
+                </div>
+            </div>
+          </div>
+        </div> -->
     </div>
   </section>
-
+<!-- 
   <section>
     <div class="bmiresult">
       <div>
@@ -106,7 +115,7 @@
           What your BMI result means
         </p>
         <p class="bodyM">
-          A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
+          <label id="bmirangemens"></label> Maintaining a
           healthy weight may lower your chances of experiencing health issues later on,
           such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
           fat and sugar content, incorporating ample fruits and vegetables. Additionally,
@@ -115,9 +124,9 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section>
+  <!-- <section>
     <div class="tipsshadebox">
       <div class="tipbox">
         <img class="tipimage" src="./assets/images/icon-eating.svg" alt="eating icon" />
@@ -210,19 +219,7 @@
       </div>
 
     </div>
-  </section>
-
-
-  <!--
-
-  A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
-  healthy weight may lower your chances of experiencing health issues later on,
-  such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
-  fat and sugar content, incorporating ample fruits and vegetables. Additionally,
-  strive for regular physical activity, ideally about 30 minutes daily for
-  five days a week.
-
- -->
+  </section> -->
 
 </body>
 
@@ -250,6 +247,7 @@
         updateBMI();
         upddateBMICategory();
         updateIdealWeightRange();
+        updateBMIRangemeans();
        }
 
     });
