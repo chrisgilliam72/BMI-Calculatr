@@ -56,12 +56,15 @@
     margin-right: 5px;
 }
 
-.mainlayout {
+
+body{
     display: flex;
     flex-direction: column;
+    align-content: end;
+    width: 100%;
 }
-
 .bluegradientsquare {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: column; 
@@ -81,15 +84,14 @@
 }
 
 
-
 .bmicaptureDetails {
     position: absolute;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1em 3em auto auto auto;
-    margin-top: 18%;
-    margin-left: 80%;
     width: 564px;
+    left:700px;
+    top:250px;
     height: auto;
     background: #FFFFFF;
     box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
@@ -102,8 +104,7 @@
 .bmigridline1 {
     grid-column: 1/ 5;
     text-align: start;
-    margin-bottom: 1em;
-
+    margin-bottom: 1rem;
 }
 
 .bmilabelbox {
@@ -198,14 +199,13 @@
 {
     width: 560px;
     height: 535px;
-    margin-left:5em;
 }
 
 .bmiresult {
     display: flex;
+    width: 1300px;
     justify-content: space-between;
     align-items: center;
-    width: 1550px;
     flex-direction: row;
 }
 
@@ -217,7 +217,7 @@
 .tipsshadebox
 {
     margin-top: 2rem;
-    width: 1550px;
+    width: 1300px;
     height: 402px;
     background: linear-gradient(290.1deg, #D6E6FE 0%, rgba(214, 252, 254, 0) 100%);
     border-radius: 35px;
@@ -279,8 +279,8 @@
     position: absolute;
     width: 85px;
     height:200px;
-    left: 1450px;
-    top: 700px;
+    left: 1200px;
+    top: 760px;
 }
 
 .iconbmi
@@ -315,15 +315,12 @@
         font-weight: 600;
     }
 
+    .headingL {
+        font-size: 32px;
+    }
+
     .bodym{
         font-size: 16px;
-    }
-    .bluegradientsquare {
-        align-items: center;
-        justify-content: center ;
-        width:375px;
-        height:640px;
-        padding-bottom: 0;
     }
 
     .logo {
@@ -337,6 +334,72 @@
         width: 327px;
         margin-left: 0px;
         text-align:center;
+    }
+
+    .bluegradientsquare {
+        align-items: center;
+        justify-content: start ;
+        width:375px;
+        height:640px;
+        padding-bottom: 0;
+        padding-top: 1rem;
+    }
+
+
+    .bmicaptureDetails {
+        box-sizing: border-box;
+        width: 95%;
+        height: auto;
+        top:420px;
+        left:0; 
+        left:2.5%
+    }
+
+    .bmiresult {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width:375px;
+        top:200px;;
+    }
+
+    .maneatingimg
+    {
+        left:500px;
+        margin-top: 100px;
+        width:311px;
+        height: 354px;
+        margin-left: 0;
+    }
+    .bmiMetricUnitsBox
+    {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .bottombanner
+    {
+        border-radius: 16px;
+        background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);   
+        height: auto;
+        width: 95%;
+        padding-bottom: 1rem;
+    }
+
+    .bmibannerresulttext
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bmiresulttextarea {
+        width: 355px;
+        height: 309px;
+        margin-left: 1rem;
     }
 };
     
