@@ -62,6 +62,7 @@ body{
     flex-direction: column;
     align-content: end;
     width: 100%;
+    padding-left: 100px
 }
 .bluegradientsquare {
     position: relative;
@@ -266,6 +267,10 @@ body{
     justify-content: space-around;
 }
 
+.limitsofbmitextbox{
+    width:450px;
+}
+
 .limitsofbmiboxline3
 {
     width: 100%;
@@ -280,7 +285,7 @@ body{
     width: 85px;
     height:200px;
     left: 1200px;
-    top: 760px;
+    top: 680px;
 }
 
 .iconbmi
@@ -319,8 +324,13 @@ body{
         font-size: 32px;
     }
 
+    .headingM {
+        font-size: 24px;
+    }
+
     .bodym{
         font-size: 16px;
+        line-height: 100%;;
     }
 
     .logo {
@@ -329,6 +339,14 @@ body{
         margin-left: 0px;
     }
 
+    body{
+        padding: 0;
+
+    }
+
+    .BMICaptureAreaMobile{
+        height: 900px;
+    }
     .textarea1
     {
         width: 327px;
@@ -356,23 +374,20 @@ body{
     }
 
     .bmiresult {
-        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         width:375px;
-        top:200px;;
     }
 
     .maneatingimg
     {
-        left:500px;
-        margin-top: 100px;
         width:311px;
         height: 354px;
         margin-left: 0;
     }
+    
     .bmiMetricUnitsBox
     {
         display: flex;
@@ -397,9 +412,102 @@ body{
     }
 
     .bmiresulttextarea {
-        width: 355px;
+        width: 300px;
         height: 309px;
         margin-left: 1rem;
     }
-};
-    
+
+    .imgcurvebetween{
+        display: none;
+    }
+
+    .tipsshadebox
+    {
+        padding: 2rem;
+        margin-left:0px;
+        width: 320px;
+        height: auto;
+        background: var(--gradient-1, linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%));
+        border-radius: 0%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    .tipbox
+    {
+        margin-left: 0px;
+        width: auto;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .limitsofbmibox
+    {
+        display: flex;
+        flex-direction: column;
+        width:300px ;
+        row-gap: 0;
+        margin-left:1rem;
+    }
+
+    .limitsofbmiboxline1
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .limitsofbmiboxline2
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        row-gap: 1rem;
+    }
+
+    .limitsofbmiboxline3
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 1rem;
+
+    }
+
+    .imgcurvebetweenmobile
+    {
+        display: none;
+    }
+
+    .limitsofbmitextbox
+    {
+        width: 300px;
+   
+    }
+
+    .bmismallcard
+    {
+        display:flex;
+        color:#5E6E85;
+        flex-direction: column;
+        box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+        border-radius: 16px;
+        align-items: start;
+        justify-content: center;
+        background-color: white;
+        padding: 1rem;
+        width: 300px;
+    }
+}
