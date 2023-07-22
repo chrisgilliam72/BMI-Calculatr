@@ -48,7 +48,6 @@
 .logo {
     height: 58.75px;
     width: 58.75px;
-    margin-left: 100px;
 }
 
 .units {
@@ -76,9 +75,10 @@ body{
     background-image: linear-gradient(290.1deg, #D6E6FE, rgba(214, 252, 254, 0) 100%);
     border-radius: 0px 0px 35px 35px;
     padding-bottom: 100px;
+    padding-left: 50px;
 }
 
-.textarea1
+.bluegradientsquare .textarea1
 {
     width: 520px;
     margin-left: 100px;
@@ -312,7 +312,10 @@ body{
     width: 250px;
     margin-left: 10px;
 }
+@media (max-width:700px)
+{
 
+}
 @media  (max-width: 500px){
 
     .headingXL {
@@ -347,12 +350,7 @@ body{
     .BMICaptureAreaMobile{
         height: 900px;
     }
-    .textarea1
-    {
-        width: 327px;
-        margin-left: 0px;
-        text-align:center;
-    }
+
 
     .bluegradientsquare {
         align-items: center;
@@ -361,8 +359,15 @@ body{
         height:640px;
         padding-bottom: 0;
         padding-top: 1rem;
+        padding-left: 0px;
     }
 
+    .bluegradientsquare .textarea1
+    {
+        width: 327px;
+        margin-left: 0px;
+        text-align:center;
+    }
 
     .bmicaptureDetails {
         box-sizing: border-box;
