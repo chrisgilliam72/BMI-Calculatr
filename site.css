@@ -314,7 +314,7 @@ body{
     width: 250px;
     margin-left: 10px;
 }
-@media (max-width:1200px)
+@media (max-width:1100px)
 {
     .headingXL {
         font-size: 48px;
