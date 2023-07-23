@@ -189,11 +189,13 @@ body{
 
 .bmibannerresulttext
 {
-    margin-top: 1rem;
-    display: flex;
-    text-align: center;
-    padding-right:2rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width:auto;
+    height: 100%;
+    padding: 1rem;
 }
+
 
 .maneatingimg
 {
@@ -208,6 +210,7 @@ body{
     align-items: center;
     flex-direction: row;
 }
+
 
 .bmiresulttextarea {
     width: 465px;
@@ -368,6 +371,7 @@ body{
         display: grid;
         grid-template-columns: 50% 50%;
         padding-left: 2rem;
+        height: auto;
     }
 
     .maneatingimg
@@ -379,7 +383,7 @@ body{
 
     .bmiresulttextarea {
         width: 300px;
-        height: 309px;
+        height: auto;
     }
 
     .imgcurvebetween{
@@ -523,11 +527,14 @@ body{
     }
 
     .bmiresult {
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         width:375px;
+        padding:0 ;
+        height: auto;
     }
 
     .maneatingimg
@@ -546,11 +553,12 @@ body{
 
     .bottombanner
     {
+        margin-left: -0.5rem;
         border-radius: 16px;
         background: linear-gradient(90deg, #345FF7 0%, #587DFF 100%);   
         height: auto;
         width: 95%;
-        padding-bottom: 1rem;
+        padding: 1rem;
     }
 
     .bmibannerresulttext
@@ -562,7 +570,6 @@ body{
 
     .bmiresulttextarea {
         width: 300px;
-        height: 309px;
         margin-left: 1rem;
     }
 
@@ -572,6 +579,7 @@ body{
     {
         padding: 2rem;
         margin-left:0px;
+        margin-top: 1rem;
         width: 320px;
         height: auto;
         background: var(--gradient-1, linear-gradient(315deg, #D6E6FE 0%, rgba(214, 252, 254, 0.00) 100%));
@@ -581,6 +589,7 @@ body{
         align-content: center;
         justify-content: center;
         row-gap: 1rem;
+        
     }
 
     .tipbox
